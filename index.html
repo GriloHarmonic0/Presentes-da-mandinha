@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uma Surpresa...</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0b0b18; /* Mesmo fundo escuro do 3D */
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        
+        /* Animação para o texto aparecer suavemente */
+        .container {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 15px rgba(255, 105, 180, 0.6); /* Brilho rosa */
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            color: #dddddd;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Estilo do botão */
+        .btn {
+            background: linear-gradient(45deg, #ff69b4, #ff1493);
+            color: white;
+            padding: 15px 35px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none; /* Tira o sublinhado do link */
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
+            display: inline-block;
+        }
+
+        .btn:hover {
+            transform: scale(1.05); /* Aumenta um pouquinho ao passar o mouse/dedo */
+            box-shadow: 0 6px 20px rgba(255, 105, 180, 0.7);
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Oi, Mandinha! ❤️</h1>
+        <p>Preparei algo especial usando um pouquinho de código e muito carinho.</p>
+        
+        <a href="presente.html" class="btn">Clique aqui para abrir</a>
+    </div>
+
+</body>
+</html>
